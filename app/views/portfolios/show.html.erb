@@ -1,0 +1,22 @@
+<div class="container portfolio-container">
+	<div class="row">
+		<div class='col-md-8'>
+			<% if @portfolio_item.main_image.file.exists? %>
+				<%= image_tag @portfolio_item.main_image.to_s, width: '100%' %>
+			<% else %>
+				<%= image_tag "https://placehold.it/600x400" %>
+			<% end %>
+		</div>
+		<div class='col-md-4'>
+			<h1><%= @portfolio_item.title %></h1>
+			<em><%= @portfolio_item.subtitle %></em>
+			<hr>
+			<p><%= @portfolio_item.body %></p>
+			<hr>
+			<h3>Key skills:</h3>
+			<% @portfolio_item.technologies.each do |tech| %>
+  			<p><%= tech.name %></p>
+			<% end %>
+		</div>
+	</div>
+</div>

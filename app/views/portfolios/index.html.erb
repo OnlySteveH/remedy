@@ -1,0 +1,11 @@
+<div class="album text-muted">
+  <div class="container">
+    <div class="row sortable">
+    <!-- to make sortable require admin:
+    	<div class="row <%= "sortable" if logged_in?(:site_admin) %>"> -->
+
+			<!-- Because the name of the model & controller is not portfolio_item, we must specify this differently to define the partial and the collection from the controller -->
+			<%= render partial: 'portfolio_item', collection: @portfolio_items %>
+		</div>
+	</div>
+</div>

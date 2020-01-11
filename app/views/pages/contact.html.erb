@@ -1,0 +1,36 @@
+<h1>Get in touch!</h1>
+<hr class='lighter'>
+<div class='row'>
+	<div class='col-md-6'>
+		<h3>Office details:</h3>
+		<span><sub>Don't visit unannounced; dogs won't like that. See <%= link_to 'here', about_path %>.</sub></span>
+		<br />
+	  <div>The Willows, Old Harleston Rd</div>
+		<div>Earsham, Bungay NR35 2AG</div>
+		<hr class='lighter'>
+		
+		<h3>Talk to me:</h3>
+		<div>Phone: 0845 095 0074</div>
+		<div>Mobile: 07854 075916</div>
+		<hr class='lighter'>
+		<h3>Web stuff:</h3>
+		<div><%= fa_icon('envelope-open') %> <%= mail_to 'steve.hunter@bigdogconsultants.co.uk', 'steve.hunter@bigdogconsultants.co.uk', subject: 'Website enquiry' %></div>
+		<div><%= fa_icon('envelope-open') %> <%= mail_to 'steve@stevehunter.co.uk', 'steve@stevehunter.co.uk', subject: 'Website enquiry' %>
+		</div>
+
+		<!-- get this working -->
+
+    <div class="social-links">
+      <span><%= link_to fa_icon('github'), 'https://github.com/OnlySteveH', target: :_blank, class: 'fa-2x icon-pad' %></span>
+      <span><%= link_to fa_icon('twitter'), 'https://twitter.com/OnlySteveH', target: :_blank, class: 'fa-2x icon-pad' %></span>
+      <span><%= link_to fa_icon('instagram'), 'https://www.instagram.com/onlysteveh/', target: :_blank, class: 'fa-2x icon-pad' %></span>
+      <span><%= link_to fa_icon('facebook'), 'https://www.facebook.com/OnlySteveH', target: :_blank, class: 'fa-2x icon-pad' %></span>
+	  </div>
+	  <hr>
+	  <!-- TODO the above -->
+	</div>
+	<div class='col-md-6'>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4864.499796205989!2d1.3839898483813469!3d52.4383877592609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9f21d5aa4881b%3A0xef6334618c0a3944!2zNTLCsDI2JzE2LjEiTiAxwrAyMycyNC4zIkU!5e0!3m2!1sen!2suk!4v1571930277659!5m2!1sen!2suk" width="450" height="450" frameborder="2" style="border:2;" allowfullscreen=""></iframe>
+	</div>
+</div>
+
