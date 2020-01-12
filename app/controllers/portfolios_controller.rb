@@ -6,6 +6,7 @@ class PortfoliosController < ApplicationController
 	layout 'portfolio'
   
 	def index
+    @page_title = "Our services"
 		@portfolio_items = Portfolio.by_position
 	end
 

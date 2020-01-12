@@ -7,11 +7,11 @@ class PagesController < ApplicationController
   end
 
   def about
-    @page_title = 'About Steve'
+    @page_title = 'About Once More Ltd'
   end
 
   def contact
-    @page_title = 'Contact me'
+    @page_title = 'Contact us!'
   end
 
   def location
