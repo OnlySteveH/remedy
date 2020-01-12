@@ -21,7 +21,7 @@ module ApplicationHelper
 	end
 
 	def bdc_copyright 
-		copyright('Big Dog Consultants Ltd', 'All rights reserved')
+		copyright('Once More Ltd', 'All rights reserved')
 	end
 
 	def nav_items
@@ -40,7 +40,7 @@ module ApplicationHelper
 			},
 			{
 				url: portfolios_path,
-				title: 'Portfolio'
+				title: 'Breaches'
 			},
 			{
 				url: blogs_path,
