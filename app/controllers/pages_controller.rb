@@ -18,4 +18,8 @@ class PagesController < ApplicationController
     @time = Time.now
     @location = "Earsham"
   end
+
+  def privacy
+    @page_title = "Your Privacy Notice"
+  end
 end

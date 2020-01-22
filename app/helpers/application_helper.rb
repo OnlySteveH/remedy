@@ -17,11 +17,11 @@ module ApplicationHelper
 	end
 
 	def copyright name, msg
-		"&copy; #{Time.now.year} | <b>#{name}</b> | #{msg}".html_safe
+		"&copy; #{Time.now.year} | <b>#{name}</b> | #{msg}".html_safe 
 	end
 
 	def bdc_copyright 
-		copyright('Once More Ltd', 'All rights reserved')
+		copyright('Once More Ltd', 'All rights reserved') + " | Registered Office: 7 Hungate, Beccles NR34 9TB | Incorporation: ******* | " + (link_to 'Privacy', privacy_path).html_safe + " | Legal"
 	end
 
 	def nav_items
@@ -29,10 +29,6 @@ module ApplicationHelper
 			{
 				url: root_path,
 				title: 'Home'
-			},
-			{
-				url: contact_path,
-				title: 'Contact'
 			},
 			{
 				url: about_path,
@@ -43,8 +39,16 @@ module ApplicationHelper
 				title: 'Breaches'
 			},
 			{
+				url: contact_path,
+				title: 'Contact'
+			},
+			{
 				url: blogs_path,
 				title: 'Blog'
+			},
+			{
+				url: privacy_path,
+				title: 'Privacy'
 			}
 		]
 
