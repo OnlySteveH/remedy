@@ -48,7 +48,7 @@
       -->
       <div>
         <% if !@portfolio_item.thumb_image.file.nil? %>
-          <%= image_tag @portfolio_item.thumb_image %>
+          <%= image_tag @portfolio_item.thumb_image.to_s %>
         <% else %>
           <%= image_tag 'https://placehold.it/425x275' %>
         <% end %>
